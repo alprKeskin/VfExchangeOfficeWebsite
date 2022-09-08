@@ -1,0 +1,163 @@
+.content-pnl {
+    position: absolute;
+    left: calc(50% - 225px);
+    top: 200px;
+    width: 450px;
+    height: 550px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 15px 15px 0px 0px;
+    border-color: rgba(29, 28, 28, 0.9);
+    border-style: solid;
+    border-width: 4px 4px 0px 4px;
+}
+
+.wallet-logo {
+    position: absolute;
+    left: 10%;
+    top: 20px;
+    font-size: 35px;
+    font-family: Nunito;
+    color: rgb(29, 28, 28);
+}
+
+.asset-caption {
+    position: absolute;
+    text-align: start;
+    left: calc(10% + 45px);
+    top: 20px;
+    font-size: 35px;
+    font-family: Nunito;
+    color: rgb(29, 28, 28);
+}
+
+.diveder {
+    position: absolute;
+    left: 5%;
+    width: 90%;
+    top: 70px;
+    height: 4px;
+    background-color: rgb(29, 28, 28);
+    border-radius: 4px;
+    opacity: 0.9;
+}
+.assets {
+    cursor: default;
+    position: absolute;
+    overflow-y: auto;
+    top: 90px;
+    left: 10%;
+    width: 80%;
+    max-height: 460px;
+}
+
+.asset-line {
+    position: relative;
+    height: 32px;
+    border-width: 0;
+    border-style: none;
+    margin-top: 8px;
+}
+
+.currency-code {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    width: 48px;
+    height: 32px;
+    border-radius: 8px 0px 0px 8px;
+    background-color: rgb(29, 28, 28);
+    color: whitesmoke;
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+.amount {
+    position: absolute;
+    text-align: start;
+    left: 48px;
+    height: 32px;
+    width: calc(100% - 96px);
+    background-color: whitesmoke;
+    color: rgb(29, 28, 28);
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.cash-transaction{
+    cursor: pointer;
+    text-align: center;
+    position: absolute;
+    left: calc(100% - 76px);
+    height: 32px;
+    width: 36px;
+    color: whitesmoke;
+    background-color: rgb(29, 28, 28);
+    border-left: 2px whitesmoke solid;
+}
+
+.cash-transaction:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+.deposit {
+    left: calc(100% - 76px);
+}
+
+.withdraw {
+    left: calc(100% - 38px);
+    border-radius: 0px 8px 8px 0px;
+}
+
+
+.amount-text {
+    margin-left: 6px;
+}
+
+.icon{
+    margin-top: 8px;
+}
+
+p{
+    margin-top: 7.5px;
+}
+
+.new-asset-line {
+    position: absolute;
+    left: calc(50% - 229px);
+    top: 550px;
+    width: 450px;
+    height: 64px;
+    background-color: rgb(29, 28, 28);
+    color: rgb(230, 230, 230); 
+    border-radius: 0px 0px 15px 15px;
+    border-color: rgba(29, 28, 28, 0.9);
+    border-style: solid;
+    border-width: 4px;
+}
+
+.deposit-new-lbl{
+    position: absolute;
+    font-weight: bolder;
+    font-size: 18px;
+
+    color: rgb(230, 230, 230);
+}
+
+.deposit-new {
+    cursor: pointer;
+    position: absolute;
+    font-weight: bolder;
+    font-size: 18px;
+    right: 20px;
+    top: 8px;
+    width: 120px;
+    height: 48px;
+    background-color: rgb(230, 230, 230);
+    color: rgb(29, 28, 28);
+    border-radius: 7.5px;
+    border: none;
+}
+
+.deposit-new:hover {
+    background-color: whitesmoke;
+}

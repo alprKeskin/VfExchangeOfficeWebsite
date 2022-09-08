@@ -1,0 +1,63 @@
+.dialog-pane {
+    position: absolute;
+    top: calc(50% - 175px);
+    left: calc(50% - 250px);
+    width: 500px;
+    height: 350px;
+    background-color: white;
+}
+
+.title {
+    position: absolute;
+    top: 18px;
+    left: 0px;
+    width: 500px;
+    height: 50px;
+    font-size: 22px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.caption{
+    position: absolute;
+    cursor: default;
+    left: 50px;
+    width: 120px;
+    height: 32px;
+    font-size: 16px;
+    color: rgb(29, 28, 28);
+    font-weight: bold;
+}
+
+.edit-area{
+    position: absolute;
+    left: 200px;
+    height: 32px;
+    width: 250px;
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(29, 28, 28);
+    background-color: rgb(230, 230, 230);
+    border-radius: 2px;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: rgb(29, 28, 28);
+}
+
+.do-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 250px;
+    height: 48px;
+    width: 100px;
+    left: 200px;    
+    background-color: rgb(29, 28, 28);
+    color: rgb(230, 230, 230);
+    border-radius: 2px;
+    border-style: none;
+}
+
+.do-btn:hover {
+    background-color: rgb(51, 50, 50);
+    color: rgb(240, 240, 240);
+}

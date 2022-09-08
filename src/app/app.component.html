@@ -1,0 +1,18 @@
+<router-outlet>
+    <div class="banner" *ngIf="bannerIsVisible">
+        <div class="logo-circle">
+            <img src="./assets/logo-vodafone.svg" height="100%">
+        </div>
+        <div class="splitter"></div>
+        <div class="caption-pnl">Vodafone Exchange Office</div>
+        <div class="navi-btn home-btn" (click)="navigate('/home')">Homepage</div>
+        <div *ngIf="isLoggedIn()" class="navi-btn wallet-btn" (click)="navigate('/wallet')">Wallet</div>
+        <div class="quarter-circle-bottom-right banner-tail-img">
+        </div>
+        <div *ngIf="isLoggedIn()" class="login-pnl" (click)="logout()">Logout</div>
+        <div *ngIf="!isLoggedIn()" class="login-pnl" (click)="login()">Login</div>
+        <div *ngIf="isLoggedIn()" class="login-splitter"></div>
+        <div *ngIf="isLoggedIn()" class="name-pnl">Welcome {{username}}</div>
+    </div>
+    <div class="quarter-circle-bottom-left page-img"></div>
+</router-outlet>

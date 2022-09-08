@@ -1,0 +1,20 @@
+@import "banner.scss";
+
+.page-img{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.3;
+}
+
+
+.quarter-circle-bottom-left{
+    background-image: url("../assets/investor-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 0 300px 0 0;
+    -moz-border-radius: 0 300px 0 0;
+    -webkit-border-radius: 0 300px 0 0;
+}

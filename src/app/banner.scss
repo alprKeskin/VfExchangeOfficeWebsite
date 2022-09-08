@@ -1,0 +1,145 @@
+.banner {
+    cursor: default;
+    position: absolute;
+    top: 0;
+    height: 160px;
+    width: 100%;
+    font-family: Nunito;
+    background-color: rgb(29, 28, 28);
+}
+
+.logo-circle {
+    position: absolute;
+    top: 7px;
+    left: 60px;
+    border-radius: 70px ;
+    width: 140px;
+    height: 140px;
+    background-color: whitesmoke;
+}
+
+
+.splitter {
+    position: absolute;
+    top: 15px;
+    left: 220px;
+    height: 130px;
+    width: 5px;
+    border-radius: 2px;
+    opacity: 0.5;
+    background-color: whitesmoke;
+}
+
+.caption-pnl{
+    position: absolute;
+    top: 20px;
+    left: 240px;
+    width: calc(100% - 240px);
+    font-size: 50px;
+    color: whitesmoke;
+}
+
+.banner-tail-img{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    opacity: 0.3;
+}
+
+.quarter-circle-bottom-right{
+    background-image: url("../assets/investor-1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px 0 0 0;
+    -moz-border-radius: 150px 0 0 0;
+    -webkit-border-radius: 150px 0 0 0;
+}
+
+.login-pnl{
+    cursor: pointer;
+    position: absolute;
+    text-align: start;
+    bottom: 20px;
+    right: 40px;
+    width: 20px;
+    font-size: 14px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.login-pnl:hover {
+    font-weight: bolder;
+    color: rgb(209, 209, 209);
+}
+
+.login-splitter {
+    position: absolute;
+    bottom: 20px;
+    right: 70px;
+    height: 20px;
+    width: 2px;
+    border-radius: 2px;
+    opacity: 1;
+    background-color: whitesmoke;
+}
+
+.name-pnl {
+    position: absolute;
+    bottom: 20px;
+    right: 80px;
+    font-size: 14px;
+    color: whitesmoke;
+    text-align: end;
+    font-weight: bold;
+}
+
+.navi-btn{
+    cursor: pointer;
+    padding-top: 5px;
+    text-align: center;
+    height: 30px;
+    width: 120px;
+    bottom: 0px;
+    border-color: whitesmoke;
+    color: whitesmoke;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+.navi-btn:hover {
+    border-style: solid;
+    border-radius: 9px 9px 0px 0px;
+    border-top: 3px;
+    border-left: 3px;
+    border-right: 3px;
+    border-bottom: 0px;
+    border-color:  rgb(29, 28, 28);
+    color:  rgb(29, 28, 28);
+    background-color: white; 
+}
+
+.active-page {
+    border-style: solid;
+    border-radius: 9px 9px 0px 0px;
+    border-top: 3px;
+    border-left: 3px;
+    border-right: 3px;
+    border-bottom: 0px;
+    border-color:  rgb(29, 28, 28);
+    color:  rgb(29, 28, 28);
+    background-color: whitesmoke; 
+}
+
+.home-btn {
+    position: absolute;
+    left: 240px;
+}
+
+.wallet-btn {
+    position: absolute;
+    left: 365px;
+}

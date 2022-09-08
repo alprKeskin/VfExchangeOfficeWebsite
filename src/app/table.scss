@@ -1,0 +1,63 @@
+@import "search.bar.scss";
+
+.content-pnl{
+    position: absolute;
+    top: 200px;
+    left: 10%;
+    width: 80%;
+    height: calc(100% - 200px);
+}
+
+.table-pnl {
+    position: absolute;
+    background-color: rgb(240, 240, 240);
+    top: 62px;
+    width: 100%;
+    height: calc(100% - 200px);
+}
+
+table {
+    position: absolute;
+    font-family: Nunito;
+    font-size: 15px;
+    width: 100%;
+    max-height: calc(100% - 50px);
+    font-weight: normal;
+}
+
+tr.mat-row {
+    height: 32px !important;
+}
+
+tr {
+    border-bottom: 1px solid #cccccc;
+    cursor: default;
+}
+
+tr.header {
+    border-bottom: 1px solid #999999;
+}
+
+tr:hover {
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: rgb(220, 220, 220);
+}
+
+td {
+    display: table-cell;
+    vertical-align: center;
+}
+
+th {
+    color: #999999;
+    font-size: 14px;
+}
+
+.paginator-detail-style {
+    position: absolute;
+    height: 50px;
+    top: calc(100% - 50px);
+    width: 100%;
+    left: 0%;
+}

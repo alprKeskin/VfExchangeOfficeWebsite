@@ -1,0 +1,43 @@
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v6.2.0/css/all.css">
+
+<div class="content-pnl">
+    <div class="search-icon-panel">
+        <div class="search-icon">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <div class="search-bar-pnl">
+        <input class="search-input" placeholder="Ara" (keyup)="search($event)">
+    </div>
+    <div class="mat-elevation-z8 table-pnl">
+        <table mat-table [dataSource]="dataSource" #sort="matSort" multiTemplateDataRows matSort>
+            <ng-container matColumnDef="no">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> No. </th>
+              <td mat-cell *matCellDef="let element"> {{element.no}} </td>
+            </ng-container>
+          
+            <ng-container matColumnDef="code">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Code </th>
+              <td mat-cell *matCellDef="let element"> {{element.code}} </td>
+            </ng-container>
+        
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+              <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+          
+            <ng-container matColumnDef="value">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Value </th>
+              <td mat-cell *matCellDef="let element"> {{element.value}} USD </td>
+            </ng-container>
+          
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+        <mat-paginator #paginator="matPaginator" [pageSizeOptions]="[1, 10, 15, 25, 50]"
+        [pageSize]="10" [length]="100" class="paginator-detail-style mat-elevation-z8">
+    </mat-paginator>
+    </div>
+    
+</div>

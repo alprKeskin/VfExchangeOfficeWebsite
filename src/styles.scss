@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; background-color: whitesmoke;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; overflow-y: auto;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; }
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

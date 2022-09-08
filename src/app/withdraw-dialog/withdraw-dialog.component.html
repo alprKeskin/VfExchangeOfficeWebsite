@@ -1,0 +1,28 @@
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v6.2.0/css/all.css">
+
+<div class="dialog-pane">
+    <div class="title">Withdraw</div>
+    <div class="caption currency-code">Currency Code:</div>
+
+    <mat-select class="edit-area currency-code" [ngModel]="currency" (ngModelChange)="changeCurrency($event)">
+        <mat-option *ngFor="let currency of currencies" [value]="currency">
+            {{currency.code}}
+        </mat-option>
+    </mat-select>
+    <div class="caption currency-name">Currency Name:</div>
+    <input class="edit-area currency-name" disabled="true" type="text" [(ngModel)]="currency.name">
+    <div class="caption amount">Amount</div>
+    <input id="amountInput" class="edit-area amount" min="0" type="number" [(ngModel)]="amount">
+    <mat-dialog-actions>
+        <br>
+        <div class="row">
+            <div class="col-md">
+                <button mat-raised-button  [mat-dialog-close]="data" cdkFocusInitial class="do-btn" (click)="withdrawMoney()">
+                    Withdraw&nbsp; <i class="fa-sharp fa-solid fa-circle-down icon"></i>
+                </button>
+            </div>
+        </div>
+        <br>
+    </mat-dialog-actions>
+</div>

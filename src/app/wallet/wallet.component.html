@@ -1,0 +1,31 @@
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v6.2.0/css/all.css">
+
+<div class="content-pnl">
+    <div class="wallet-logo">
+        <i class="fa-solid fa-wallet"></i>
+    </div>
+    <div class="asset-caption">Assets</div>
+    <div class="diveder"></div>
+    <div class="assets">
+
+
+        <div class="asset-line" *ngFor="let element of elements">
+            <div class="currency-code"><p>{{element.code}}</p></div>
+            <div class="amount"><p class="amount-text">{{element.amount}}</p></div>
+
+            <div class="cash-transaction deposit" title="Deposit" (click)="deposit(element.code, element.amount)">
+                <i class="fa-sharp fa-solid fa-circle-up icon"></i>
+            </div>
+            
+            <div class="cash-transaction withdraw" title="Withdraw" (click)="withdraw(element.code, element.amount)">
+                <i class="fa-sharp fa-solid fa-circle-down icon"></i>
+            </div>
+        </div>
+    
+
+    </div>
+    <div class="new-asset-line">
+        <button class="deposit-new " (click)="deposit('',0)">Deposit&nbsp;<i class="fa-sharp fa-solid fa-circle-up icon"></i></button>
+    </div>
+</div>
